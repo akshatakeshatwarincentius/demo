@@ -53,12 +53,12 @@ export function DataList(props) {
             console.log(error)
         });
 
-        changeOrder();
+        //changeOrder();
         return () => {
             //cleanup
         }
     }, [deleteRecipe])
-    
+
     return (
         <>
             <Navigation />
