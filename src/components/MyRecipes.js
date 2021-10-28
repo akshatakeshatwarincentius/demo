@@ -14,21 +14,6 @@ export function DataList(props) {
     const [sort_direction, setSortDirection] = useState(true)
     const [deleteRecipe, setDeleteRecipe] = useState(false)
 
-    useEffect(() => {
-        RecipesServices.getAll(JSON.parse(localStorage.getItem("login")).user_id)
-        .then(response => {
-            setListItems(response.data.Recipes)
-            setAllItems(response.data.Recipes)
-        })
-        .catch(error =>{
-            console.log(error)
-        });
-
-        changeOrder();
-        return () => {
-            //cleanup
-        }
-    }, [deleteRecipe])
 
     function applyFilter(val){
         let search_field = val.toLowerCase();
@@ -58,6 +43,22 @@ export function DataList(props) {
         }  
     }
 
+    useEffect(() => {
+        RecipesServices.getAll(JSON.parse(localStorage.getItem("login")).user_id)
+        .then(response => {
+            setListItems(response.data.Recipes)
+            setAllItems(response.data.Recipes)
+        })
+        .catch(error =>{
+            console.log(error)
+        });
+
+        changeOrder();
+        return () => {
+            //cleanup
+        }
+    }, [deleteRecipe])
+    
     return (
         <>
             <Navigation />
