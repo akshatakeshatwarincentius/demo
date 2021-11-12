@@ -56,7 +56,7 @@ function FilterRecipe(props) {
         <Navigation />
         <CommonBg heading={Title} big={true}/>
         <div className="container mx-auto px-24 bg-gray-100 pt-16 pb-16">
-            <div className="grid grid-cols-5"> 
+            <div className="grid md:grid-cols-5 sm:grid-cols-1"> 
                     {
                         MealList.length ?
                         MealList.map((data, i) => {

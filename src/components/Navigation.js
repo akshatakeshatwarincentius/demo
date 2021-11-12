@@ -14,7 +14,7 @@ export default function Navigation() {
   return (
        <>
           <div className="container items-center">
-            <div className="items-center justify-between w-full px-5 overflow-y-auto tflex whitespace-nowrap scroll-hidden ">
+            <div className="items-center justify-between w-full overflow-y-auto tflex whitespace-nowrap scroll-hidden ">
               <div className="flex flex-col flex-wrap mx-auto md:items-center md:flex-row justify-between">
                 <Link to="/" className="pr-2 lg:pr-8 lg:px-6 focus:outline-none">
                   <div className="inline-flex items-center p-2">
@@ -23,8 +23,8 @@ export default function Navigation() {
                     </h2>
                   </div>
                 </Link>
-                <nav className="flex flex-wrap items-center justify-start text-base ">
-                  <ul className="items-center inline-block list-none lg:inline-flex">
+                <nav className="flex flex-wrap items-center justify-start text-base">
+                  <ul className="items-center inline-block list-none lg:inline-flex md:inline-block hidden">
                   {
                     !logged_in ? 
                     (

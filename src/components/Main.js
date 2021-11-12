@@ -46,10 +46,10 @@ function Main() {
                     />
                     <div className="absolute w-full top-8 md:top-32 text-center">
                        <div className="w-full">
-                        <h1 className="text-yellow-50 pb-10 italic text-3xl font-black">Search Recipes...</h1>
+                        <h1 className="text-yellow-50 md:pb-10 italic md:text-3xl font-black sm:text-sm sm:pb-5">Search Recipes...</h1>
                         <form>
                             <div>
-                                <input className="md:p-3 rounded-l-full border border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-900 focus:border-transparent "
+                                <input className="md:p-3 rounded-l-full border border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-900 focus:border-transparent md:w-auto w-32"
                                 onChange={(e)=>setSearchedTerm(e.target.value)} />                       
                                 <button className="md:p-3 ring-2 bg-yellow-800 ring-yellow-900 text-white rounded-r-full" onClick= {() => setSearch(true)}>Go</button>
                             </div>   
@@ -59,7 +59,7 @@ function Main() {
             </div>
             <div className="container mx-auto px-24 bg-gray-100 pt-16 pb-16">
                <div className="text-center w-full italic text-4xl pb-8">Categories</div>
-                <div className="grid grid-cols-5"> 
+                <div className="grid md:grid-cols-5 sm:grid-cols-1"> 
                     {
                         categoryList.length ?
                         categoryList.map((data, i) => {

@@ -22,7 +22,7 @@ function Login(props){
             <Navigation />
             <CommonBg heading= "Login Here" big={false}/>
             <div className="container mx-auto px-24 bg-gray-100 pt-16 pb-16">
-                <div className="grid grid-cols-4 justify-center">
+                <div className="grid md:grid-cols-4 justify-center">
                     <div></div>
                     <div className="p-10 bg-white rounded-lg shadow-xl col-span-2">
                         <form onSubmit={ signIn }>
