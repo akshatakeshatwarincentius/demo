@@ -62,9 +62,8 @@ export function DataList(props) {
     return (
         <>
             <Navigation />
-
             <CommonBg heading ="My Recipes" />
-            <div className="container mx-auto px-24 bg-gray-100 pt-16 pb-16">
+            <div className="container mx-auto px-5 md:px-24 pt-10 pb-10 md:pt-16 md:pb-16 bg-gray-100">
                 <div className="p-10 bg-white rounded-lg shadow-xl">     
                     <div className="grid grid-cols-3 justify-center">
                         <div className="col-span-2">

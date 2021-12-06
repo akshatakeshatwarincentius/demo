@@ -2,6 +2,7 @@ import { useState } from 'react'
 import AuthServices from "../services/AuthServices";
 import Navigation from './Navigation';
 import CommonBg from './CommonBg';
+import banner from "./img/bg-auth-new.jpg";
 
 function Login(props){
 
@@ -20,20 +21,22 @@ function Login(props){
     return (
         <>
             <Navigation />
-            <CommonBg heading= "Login Here" big={false}/>
-            <div className="container mx-auto px-24 bg-gray-100 pt-16 pb-16">
-                <div className="grid md:grid-cols-4 justify-center">
-                    <div></div>
-                    <div className="p-10 bg-white rounded-lg shadow-xl col-span-2">
+            <CommonBg class="md:hidden" heading ="Login Here" big={false}/>
+            <div className="container">
+                <div className="md:grid md:grid-cols-3 justify-center">
+                    <div className="pt-16 md:pt-0 flex items-center justify-center text-center bg-white">
                         <form onSubmit={ signIn }>
                             <div className="w-full mb-5">
-                                <input type="email" className="p-3 w-full rounded-xl focus:outline-none focus:ring-yellow-500 ring-yellow-200 ring-2" placeholder="Enter Email" name="name" onChange={(e)=> setName(e.target.value)} required/>
+                                <input type="email" className="p-3 w-full rounded-sm focus:outline-none focus:ring-yellow-500 ring-yellow-800 ring-2" placeholder="Enter Email" name="name" onChange={(e)=> setName(e.target.value)} required/>
                             </div>
                             <div className="w-full mb-5">
-                                <input type="password" className="p-3 w-full rounded-xl focus:outline-none focus:ring-yellow-500 ring-yellow-200 ring-2" placeholder="Enter Password" name="password" onChange={(e)=> setPassword(e.target.value)} required/>
+                                <input type="password" className="p-3 w-full rounded-sm focus:outline-none focus:ring-yellow-500 ring-yellow-800 ring-2" placeholder="Enter Password" name="password" onChange={(e)=> setPassword(e.target.value)} required/>
                             </div>                               
-                            <button type="submit" className="p-3 bg-yellow-600 border-yellow-700 rounded-lg text-white font-bold" >Submit</button>
+                            <button type="submit" className="p-3 bg-yellow-800 border-yellow-700 rounded-sm text-white font-bold" >Sign In</button>
                         </form> 
+                    </div>
+                    <div className="md:block hidden col-span-2">
+                        <img src={banner} />
                     </div>
                 </div>
             </div>

@@ -32,9 +32,9 @@ export default function SingleRecipe(props)  {
             <>
                 <Navigation />
                 <CommonBg heading={Title} big={true}/> 
-                <div className="container mx-auto px-24 bg-gray-100 pt-16 pb-16">
-                        <div className="grid grid-cols-4 gap-4 m-3 p-4 rounded-lg shadow-xl bg-white">
-                            <div className="">
+                <div className="container mx-auto px-2 md:px-24 pt-10 pb-10 md:pt-16 md:pb-16 bg-gray-100">
+                        <div className="grid md:grid-cols-4 gap-4 m-3 p-4 rounded-lg shadow-xl bg-white">
+                            <div>
                                 <img src={Recipe.strMealThumb} alt={Recipe.strCategory}/>
                                 <p className="m-4">
                                     <b> <i class="fa fa-list-alt" aria-hidden="true"></i> </b>
@@ -64,7 +64,7 @@ export default function SingleRecipe(props)  {
                                 </p>
                             </div>
                             <div className="col-span-3">
-                                    <div className="grid grid-cols-3 gap-4">
+                                    <div className="grid md:grid-cols-3 gap-4">
                                         <div className="col-span-2">
                                             <div className="font-bold w-full text-center">Instruction </div>
                                             <p className="text-justify">

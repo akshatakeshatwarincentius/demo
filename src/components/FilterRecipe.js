@@ -55,8 +55,8 @@ function FilterRecipe(props) {
         <>
         <Navigation />
         <CommonBg heading={Title} big={true}/>
-        <div className="container mx-auto px-24 bg-gray-100 pt-16 pb-16">
-            <div className="grid md:grid-cols-5 sm:grid-cols-1"> 
+        <div className="container mx-auto px-5 md:px-24 pt-10 pb-10 md:pt-16 md:pb-16 bg-gray-100 ">
+            <div className="grid grid-cols-2 md:grid-cols-5 sm:grid-cols-2"> 
                     {
                         MealList.length ?
                         MealList.map((data, i) => {
@@ -69,7 +69,7 @@ function FilterRecipe(props) {
                                                 }
                                                 }} 
                                     >
-                                        <img src={data.strMealThumb} alt={data.strMeal} />
+                                        <img className="rounded-lg transform hover:-translate-y-1 duration-500 hover:scale-110" src={data.strMealThumb} alt={data.strMeal} />
                                         <div className="w-full text-center text-gray-700 pt-5 font-semibold">&nbsp; {data.strMeal} </div>
                                 </Link>
                             </div>

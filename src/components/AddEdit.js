@@ -63,8 +63,8 @@ export function AddEdit(props) {
         <>
             <Navigation />
             <CommonBg heading ={id ? "Edit Recipe" : "Add Recipe" } />
-            <div className="container mx-auto px-24 bg-gray-100 pt-16 pb-16">
-                <div className="grid grid-cols-5 justify-center">
+            <div className="container px-5 md:px-24 pt-10 pb-10 md:pt-16 md:pb-16 bg-gray-100">
+                <div className="grid md:grid-cols-5 justify-center">
                     <div></div>
                     <div className="p-10 bg-white rounded-lg shadow-xl col-span-3">
                         <form onSubmit={id ? editRecipe : addRecipe }>

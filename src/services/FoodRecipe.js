@@ -6,6 +6,10 @@ const getAllCat = () => {
     return axios.get(apiURL+"/categories.php");
 };
 
+const getCountry = () => {
+    return axios.get(apiURL+"/list.php?a=list");
+};
+
 const getIndainRecipes = () => {
     return axios.get(apiURL+"/filter.php?a=Indian");
 };
@@ -32,6 +36,7 @@ const methods = {
     getFilteredByCategory,
     getSearchedByName,
     getRecipeById,
-    getFilteredByCountry
+    getFilteredByCountry,
+    getCountry
 }
 export default methods
