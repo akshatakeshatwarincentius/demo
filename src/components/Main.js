@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Navigation from './Navigation';
 import FoodRecipe from "../services/FoodRecipe";
 import { Redirect, Route } from 'react-router';
-import banner from "./img/banner.png";
+// import banner from "./img/banner.png";
 import { Link } from "react-router-dom";
 import Carousel from './Carousel';
 

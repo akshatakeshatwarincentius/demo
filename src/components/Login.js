@@ -36,7 +36,7 @@ function Login(props){
                         </form> 
                     </div>
                     <div className="md:block hidden col-span-2">
-                        <img src={banner} />
+                        <img src={banner} alt={banner}/>
                     </div>
                 </div>
             </div>
