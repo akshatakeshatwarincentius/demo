@@ -66,7 +66,7 @@ function Main() {
                     </div>
                 </div>
 
-                <div class="bg-gray-50">
+                <div class="bg-gray-50 hidden">
                     <Carousel show={20} >
                         {
                             Country.length ?
@@ -91,7 +91,9 @@ function Main() {
                 </div>
 
                 <div className="container mx-auto px-5 md:px-24 pt-10 pb-10 md:pt-16 md:pb-16 bg-gray-100 ">
-                    <div className="text-center w-full italic text-2xl md:text-4xl pb-8">Categories</div>
+                    <div className="text-center w-full italic text-2xl md:text-4xl pb-8 main-heading">
+                        Categories
+                    </div>
                     <div className="grid grid-cols-2 md:grid-cols-5 sm:grid-cols-2">
                         {
                             categoryList.length ?

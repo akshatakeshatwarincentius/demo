@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.main-heading{
+    background: url("../components/img/brush-stroke-banner-6.svg");
+} 
